@@ -1,0 +1,18 @@
+--cpu Cortex-M0+
+".\objects\ti_msp_dl_config.o"
+"..\MCU_Drivers\driverlib.a"
+".\objects\main.o"
+".\objects\startup_mspm0g350x_uvision.o"
+".\objects\delay.o"
+".\objects\usart.o"
+".\objects\key.o"
+".\objects\oled.o"
+".\objects\encoder.o"
+".\objects\motor_ctrl.o"
+".\objects\protocol.o"
+".\objects\gw_gray.o"
+".\objects\mpu6050.o"
+--strict --scatter ".\mspm0g3507.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\M0_G3507.map" -o .\Objects\M0_G3507.axf

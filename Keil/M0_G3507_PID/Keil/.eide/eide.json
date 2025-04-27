@@ -1,0 +1,233 @@
+{
+  "name": "M0_G3507",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "MCU_Drivers",
+        "files": [
+          {
+            "path": "../MCU_Drivers/ti_msp_dl_config.c"
+          },
+          {
+            "path": "../MCU_Drivers/ti_msp_dl_config.h"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Driverlib",
+        "files": [
+          {
+            "path": "../MCU_Drivers/driverlib.a"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "../User/main.c"
+          },
+          {
+            "path": "startup_mspm0g350x_uvision.s"
+          },
+          {
+            "path": "../User/delay.c"
+          },
+          {
+            "path": "../User/usart.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Hardware",
+        "files": [
+          {
+            "path": "../Hardware/key.c"
+          },
+          {
+            "path": "../Hardware/oled.c"
+          },
+          {
+            "path": "../Hardware/Encoder.c"
+          },
+          {
+            "path": "../Hardware/motor_ctrl.c"
+          },
+          {
+            "path": "../Hardware/protocol.c"
+          },
+          {
+            "path": "../Hardware/gw_gray.c"
+          },
+          {
+            "path": "../Hardware/mpu6050/mpu6050.c"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "650b3058afa1dcd484bfdc8ccafcf054"
+  },
+  "targets": {
+    "M0_G3507": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M0+",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "mspm0g3507.sct",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20200000",
+                "size": "0x8000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x20300000",
+                "size": "0x8000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x8000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x20100000",
+                "size": "0x8000"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x400000",
+                "size": "0x20000"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "..",
+          "../../../source/third_party/CMSIS/Core/Include",
+          "../MCU_Drivers",
+          "../User",
+          "../Hardware",
+          "../Hardware/mpu6050",
+          "RTE/_M0_G3507"
+        ],
+        "libList": [],
+        "defineList": [
+          "__MSPM0G3507__"
+        ]
+      }
+    }
+  },
+  "version": "3.4"
+}

@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "main.h": "c",
+            "mpu6050.h": "c",
+            "key.h": "c",
+            "ti_msp_dl_config.h": "c",
+            "driverlib.h": "c",
+            "dl_timerg.h": "c"
+        }
+    },
+    "extensions": {}
+}
